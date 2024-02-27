@@ -3,7 +3,7 @@ import mplfinance as mpf
 import pandas as pd
 
 # Fetch historical data for Tesla
-tesla_data = yf.download('TSLA', start='2014-01-01', end='2024-01-01')
+tesla_data = yf.download('TSLA', start='2020-01-01', end='2024-01-01')
 
 # Calculate the 50-day and 200-day moving averages
 tesla_data['50_MA'] = tesla_data['Close'].rolling(window=50).mean()
